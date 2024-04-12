@@ -1,6 +1,8 @@
 import { User } from "../entities";
-
-const UserAccount = ({ user }: { user: User }) => {
+type CombinedProps = {
+  user: User;
+};
+const UserAccount = ({ user }: CombinedProps) => {
   return (
     <>
       <h2>User Profile</h2>

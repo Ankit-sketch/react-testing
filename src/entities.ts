@@ -3,7 +3,15 @@ export type User = {
   name: string;
   isAdmin?: boolean;
 };
-
+export type DummyData = {
+  id: number;
+  name: string;
+  isAdmin?: boolean;
+};
+export type CombinedProps = {
+  user: User;
+  dummyData: DummyData;
+};
 export type Category = {
   id: number;
   name: string;
