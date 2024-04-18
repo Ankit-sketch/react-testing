@@ -1,6 +1,5 @@
 import { render, screen } from "@testing-library/react";
 import ProductDetail from "../../src/components/ProductDetail";
-import { products } from "../mocks/data";
 import { db } from "../mocks/db";
 import { HttpResponse, http } from "msw";
 import { server } from "../mocks/server";

@@ -4,6 +4,8 @@ import { db } from "./db";
 
 export const handler = [
   ...db.product.toHandlers("rest"),
+  ...db.categories.toHandlers("rest"),
+
   // http.get("/products", () => {
   //   return HttpResponse.json([
   //     {
