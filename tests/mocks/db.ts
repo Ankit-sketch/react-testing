@@ -1,5 +1,5 @@
-import { factory, primaryKey } from "@mswjs/data";
 import { faker } from "@faker-js/faker";
+import { factory, primaryKey } from "@mswjs/data";
 
 // it is an in memory db so ude it wisely
 export const db = factory({
@@ -7,6 +7,7 @@ export const db = factory({
     id: primaryKey(faker.number.int),
     name: faker.commerce.productName,
     price: () => faker.number.int({ min: 1, max: 100 }),
+    categoryId: faker.number.int,
   },
   categories: {
     id: primaryKey(faker.number.int),
